@@ -22,4 +22,9 @@ https://musescore-dataset.xmader.com/score.jsonl
 
 ### All `mscz` files
 
-Contact me if you need them.
+[Contact me](mailto:i@xmader.com) if you need them.
+
+## Special Thanks
+
+I would like to thank [Luca B.](mailto:lucabar0@email.cpcc.edu), 
+telling me that what I am doing is meaningful.

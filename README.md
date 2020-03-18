@@ -3,6 +3,8 @@
 
 The unofficial dataset of all music sheets and users on musescore.com, dedicated to big data analytics / machine learning.
 
+> All data is collected by iterating through [musecore.com's *public* API](https://developers.musescore.com/).
+
 > The `jsonl` files are in the [Newline-delimited JSON](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON) ([JSON Lines](http://jsonlines.org/)) format.
 
 ### [View/Query](https://console.cloud.google.com/bigquery?project=xmader&p=xmader&d=musescore&page=dataset) in Google BigQuery

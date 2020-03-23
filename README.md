@@ -1,11 +1,13 @@
 
 # musescore-dataset
 
-The unofficial dataset of all music sheets and users on musescore.com, dedicated to big data analytics / machine learning.
+The unofficial dataset of all music sheets and users on musescore.com, dedicated to big data analytics / data science / machine learning.
 
 > All data is collected by iterating through [musecore.com's *public* API](https://developers.musescore.com/).
 
 > The `jsonl` files are in the [Newline-delimited JSON](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON) ([JSON Lines](http://jsonlines.org/)) format.
+
+**Only need the sheet files to learn music? try [musescore-downloader](https://github.com/Xmader/musescore-downloader).**
 
 ### [View/Query](https://console.cloud.google.com/bigquery?project=xmader&p=xmader&d=musescore&page=dataset) in Google BigQuery
 
@@ -25,6 +27,8 @@ https://musescore-dataset.xmader.com/score.jsonl
 ### All `mscz` files
 
 [Contact me](mailto:i@xmader.com) if you need them.
+
+> The purpose of the project is to make the data of musescore.com accessible to anyone in need, and bring a clean and high-quality music dataset to the world of computer science, but **not for individuals who only want to keep the data pointlessly**.
 
 ## Special Thanks
 

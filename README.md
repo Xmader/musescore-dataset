@@ -30,6 +30,11 @@ https://musescore-dataset.xmader.com/score.jsonl
 
 https://musescore-dataset.xmader.com/mscz-files.csv
 
+```sh
+# The CSV file itself is on IPFS
+wget -O mscz-files.csv https://ipfs.io/ipns/QmSdXtvzC8v8iTTZuj5cVmiugnzbR1QATYRcGix4bBsioP/mscz-files.csv.part{0..15}
+```
+
 This is a csv file, which contains score id (`id`) and the corresponding IPFS reference (`ref`).
 
 All files are available on [IPFS](https://ipfs.io/).  
@@ -45,6 +50,7 @@ ipfs get {ref} -o {id}.mscz
 #### Also via [IPFS HTTP Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)
 
 * https://ipfs.infura.io/{ref}
+* https://ipfs.eternum.io/{ref}
 * https://ipfs.io/{ref}
 * https://cloudflare-ipfs.com/{ref}
 * [more](https://ipfs.github.io/public-gateway-checker/)

@@ -40,14 +40,7 @@ This is a csv file, which contains score id (`id`) and the corresponding IPFS re
 All files are available on [IPFS](https://ipfs.io/).  
 NO ONE CAN TAKE IT DOWN NOW!
 
-#### Using local IPFS daemon
-
-```sh
-ipfs daemon --init &
-ipfs get {ref} -o {id}.mscz
-```
-
-#### Also via [IPFS HTTP Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)
+#### Via [IPFS HTTP Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)
 
 * https://ipfs.infura.io/{ref}
 * https://ipfs.eternum.io/{ref}
@@ -56,8 +49,26 @@ ipfs get {ref} -o {id}.mscz
 * [more](https://ipfs.github.io/public-gateway-checker/)
 
 ```sh
-# Example
-wget https://ipfs.infura.io/ipfs/QmXzHnUtgFXfTnXyDBCjUpKtmVZSu8yRbpypUXfexQSdXZ -O 3291706.mscz
+#!/bin/bash
+while IFS=, read -r id ref
+do
+    wget https://ipfs.infura.io$ref -O $id.mscz
+done < <(sed '1d' mscz-files.csv)
+```
+
+#### Or using local IPFS daemon
+
+```bash
+#!/bin/bash
+
+# Install IPFS https://docs.ipfs.io/how-to/command-line-quick-start/#install-ipfs
+
+ipfs daemon --init &
+
+while IFS=, read -r id ref
+do
+    ipfs get $ref -o $id.mscz
+done < <(sed '1d' mscz-files.csv)
 ```
 
 [Contact me](mailto:i@xmader.com) if you have any questions.

@@ -35,12 +35,12 @@ https://musescore-dataset.xmader.com/mscz-files.csv
 wget -O mscz-files.csv https://ipfs.io/ipns/QmSdXtvzC8v8iTTZuj5cVmiugnzbR1QATYRcGix4bBsioP/mscz-files.csv.part{0..15}
 ```
 
-This is a csv file, which contains score id (`id`) and the corresponding IPFS reference (`ref`).
+This is a csv file, which contains score id (`id`) and the corresponding IPFS reference (`ref`) to each mscz file.
 
 All files are available on [IPFS](https://ipfs.io/).  
 NO ONE CAN TAKE IT DOWN NOW!
 
-#### Via [IPFS HTTP Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)
+#### Download mscz files via [IPFS HTTP Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)
 
 * https://ipfs.infura.io/{ref}
 * https://ipfs.eternum.io/{ref}

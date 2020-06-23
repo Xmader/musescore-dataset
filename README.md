@@ -52,7 +52,7 @@ NO ONE CAN TAKE IT DOWN NOW!
 #!/bin/bash
 while IFS=, read -r id ref
 do
-    wget https://ipfs.infura.io$ref -O $id.mscz
+    wget -nv https://ipfs.infura.io$ref -O $id.mscz
 done < <(sed '1d' mscz-files.csv)
 ```
 

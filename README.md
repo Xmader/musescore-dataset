@@ -14,7 +14,7 @@ The unofficial dataset of all music sheets and users on musescore.com, dedicated
 ### User Data
 
 > Update Manually,  
-> Last Updated: Mar 16, 2020
+> Last Updated: Nov 9, 2020
 
 https://musescore-dataset.xmader.com/user.jsonl
 

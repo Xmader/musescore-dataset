@@ -32,7 +32,7 @@ https://musescore-dataset.xmader.com/mscz-files.csv
 
 ```sh
 # The CSV file itself is on IPFS
-wget -O mscz-files.csv https://ipfs.io/ipns/QmSdXtvzC8v8iTTZuj5cVmiugnzbR1QATYRcGix4bBsioP/mscz-files.csv.part{0..15}
+wget -O mscz-files.csv https://ipfs.io/ipns/QmSdXtvzC8v8iTTZuj5cVmiugnzbR1QATYRcGix4bBsioP/mscz-files.csv
 ```
 
 This is a csv file, which contains score id (`id`) and the corresponding IPFS reference (`ref`) to each mscz file.

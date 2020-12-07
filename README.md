@@ -42,6 +42,10 @@ This is a csv file, which contains score id (`id`) and the corresponding IPFS re
 All files are available on [IPFS](https://ipfs.io/).  
 NO ONE CAN TAKE IT DOWN NOW!
 
+#### Bulk Download
+
+See <https://discord.com/channels/774491656643674122/774491656643674128/784661028310220820>
+
 #### Download mscz files via [IPFS HTTP Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)
 
 * https://ipfs.infura.io/{ref}

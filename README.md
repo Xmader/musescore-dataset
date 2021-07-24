@@ -61,6 +61,20 @@ do
     wget -nv https://ipfs.infura.io$ref -O $id.mscz
 done < <(sed '1d' mscz-files.csv)
 ```
+#### Using CURL
+
+```bash
+#!/bin/bash
+while IFS=, read -r id ref
+do
+        if [ -f "$id.mscz" ]; then
+                echo "$id.mscz exists."
+        else
+                echo "$id.mscz does not exist."
+                curl -\# https://ipfs.infura.io$ref -o $id.mscz -m 20
+        fi
+done < <(sed '1d' mscz-files.csv)
+```
 
 #### Or using local IPFS daemon
 

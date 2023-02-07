@@ -63,7 +63,7 @@ do
         echo "$id.mscz exists."
     else
         echo "$id.mscz does not exist."
-        wget -nv --read-timeout=20 https://ipfs.io$ref -O $id.mscz
+        wget -nv --read-timeout=3 https://ipfs.io$ref -O $id.mscz
     fi
 done < <(sed '1d' mscz-files.csv)
 ```
@@ -78,7 +78,7 @@ do
         echo "$id.mscz exists."
     else
         echo "$id.mscz does not exist."
-        curl -\# https://ipfs.io$ref -o $id.mscz -m 20
+        curl -\# https://ipfs.io$ref -o $id.mscz -m 3
     fi
 done < <(sed '1d' mscz-files.csv)
 ```

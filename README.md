@@ -59,7 +59,12 @@ See <https://discord.com/channels/774491656643674122/774491656643674128/78466102
 #!/bin/bash
 while IFS=, read -r id ref
 do
-    wget -nv https://ipfs.io$ref -O $id.mscz
+    if [ -f "$id.mscz" ]; then
+        echo "$id.mscz exists."
+    else
+        echo "$id.mscz does not exist."
+        wget -nv --read-timeout=20 https://ipfs.io$ref -O $id.mscz
+    fi
 done < <(sed '1d' mscz-files.csv)
 ```
 
@@ -69,12 +74,12 @@ done < <(sed '1d' mscz-files.csv)
 #!/bin/bash
 while IFS=, read -r id ref
 do
-        if [ -f "$id.mscz" ]; then
-                echo "$id.mscz exists."
-        else
-                echo "$id.mscz does not exist."
-                curl -\# https://ipfs.io$ref -o $id.mscz -m 20
-        fi
+    if [ -f "$id.mscz" ]; then
+        echo "$id.mscz exists."
+    else
+        echo "$id.mscz does not exist."
+        curl -\# https://ipfs.io$ref -o $id.mscz -m 20
+    fi
 done < <(sed '1d' mscz-files.csv)
 ```
 

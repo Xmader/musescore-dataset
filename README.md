@@ -34,7 +34,7 @@ https://musescore-dataset.xmader.com/mscz-files.csv
 # The CSV file itself is on IPFS
 ipns="QmSdXtvzC8v8iTTZuj5cVmiugnzbR1QATYRcGix4bBsioP"
 cid=$(curl https://ipfs.io/api/v0/dag/resolve?arg=/ipns/$ipns/ | grep -o "\\w\{46\}")
-wget -O mscz-files.csv https://ipfs.infura.io/ipfs/${cid}/mscz-files.csv
+wget -O mscz-files.csv https://ipfs.io/ipfs/${cid}/mscz-files.csv
 ```
 
 This is a csv file, which contains score id (`id`) and the corresponding IPFS reference (`ref`) to each mscz file.
@@ -51,8 +51,6 @@ See <https://discord.com/channels/774491656643674122/774491656643674128/78466102
 
 #### Download mscz files via [IPFS HTTP Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)
 
-* https://ipfs.infura.io/{ref}
-* https://ipfs.eternum.io/{ref}
 * https://ipfs.io/{ref}
 * https://cloudflare-ipfs.com/{ref}
 * [more](https://ipfs.github.io/public-gateway-checker/)
@@ -61,9 +59,10 @@ See <https://discord.com/channels/774491656643674122/774491656643674128/78466102
 #!/bin/bash
 while IFS=, read -r id ref
 do
-    wget -nv https://ipfs.infura.io$ref -O $id.mscz
+    wget -nv https://ipfs.io$ref -O $id.mscz
 done < <(sed '1d' mscz-files.csv)
 ```
+
 #### Using CURL
 
 ```bash
@@ -74,7 +73,7 @@ do
                 echo "$id.mscz exists."
         else
                 echo "$id.mscz does not exist."
-                curl -\# https://ipfs.infura.io$ref -o $id.mscz -m 20
+                curl -\# https://ipfs.io$ref -o $id.mscz -m 20
         fi
 done < <(sed '1d' mscz-files.csv)
 ```

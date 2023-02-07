@@ -44,7 +44,7 @@ NO ONE CAN TAKE IT DOWN NOW!
 
 #### Bulk Download
 
-See <https://discord.com/channels/774491656643674122/774491656643674128/784661028310220820>
+See <https://discord.com/channels/774491656643674122/777457743983411221/1032054445422420039>
 
 (You must join the [LibreScore Community Discord](https://discord.gg/DKu7cUZ4XQ) first to see the message.)  
 [![Discord](https://img.shields.io/discord/774491656643674122?color=7289da&label=Discord&logo=discord)](https://discord.gg/DKu7cUZ4XQ)

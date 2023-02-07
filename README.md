@@ -32,8 +32,8 @@ https://musescore-dataset.xmader.com/mscz-files.csv
 
 ```sh
 # The CSV file itself is on IPFS
-ipns="QmSdXtvzC8v8iTTZuj5cVmiugnzbR1QATYRcGix4bBsioP"
-cid=$(curl https://ipfs.io/api/v0/dag/resolve?arg=/ipns/$ipns/ | grep -o "\\w\{46\}")
+# ipns://QmSdXtvzC8v8iTTZuj5cVmiugnzbR1QATYRcGix4bBsioP
+cid=$(curl https://musescore-dataset.xmader.com/csv-ipfs-ref | grep -o "\\w\{46\}")
 wget -O mscz-files.csv https://ipfs.io/ipfs/${cid}/mscz-files.csv
 ```
 

@@ -44,6 +44,9 @@ NO ONE CAN TAKE IT DOWN NOW!
 
 #### Bulk Download
 
+> We ([LibreScore](https://github.com/LibreScore) team) don't condone mass downloads using regular methods.  
+> **USE AT YOUR OWN RISK**
+
 See <https://discord.com/channels/774491656643674122/777457743983411221/1032054445422420039>
 
 (You must join the [LibreScore Community Discord](https://discord.gg/DKu7cUZ4XQ) first to see the message.)  

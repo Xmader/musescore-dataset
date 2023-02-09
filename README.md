@@ -98,11 +98,37 @@ do
 done < <(sed '1d' mscz-files.csv)
 ```
 
+#### Help hosting files
+
+You could help **musescore-dataset** become more accessible by:
+
+* Hosting ([ipfs pin](https://docs.ipfs.tech/how-to/pin-files/)) those mscz files on your own IPFS nodes
+
+    ```bash
+    #!/bin/bash
+    while IFS=, read -r id ref
+    do
+        ipfs pin add -r --progress $ref
+    done < <(sed '1d' mscz-files.csv)
+    ```
+
+    or,
+
+* Asking a public IPFS gateway to periodically fetch and cache file requests
+
+    ```bash
+    #!/bin/bash
+    # run in a cron job
+    while IFS=, read -r id ref
+    do
+        echo "fetching $id.mscz"
+        curl -\# https://ipfs.io$ref -o $id.mscz -m 0.5
+        rm -f $id.mscz
+    done < <(sed '1d' mscz-files.csv | shuf)
+    ```
+
+---
+
 [Contact me](mailto:i@xmader.com) if you have any questions.
 
 > The purpose of the project is to make the data of musescore.com accessible to anyone in need, and bring a clean and high-quality music dataset to the world of computer science, but **not for individuals who only want to keep the data pointlessly**.
-
-## Special Thanks
-
-I would like to thank Luca B., 
-telling me that what I am doing is meaningful.

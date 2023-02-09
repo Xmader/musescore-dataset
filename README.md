@@ -20,13 +20,13 @@ https://musescore-dataset.xmader.com/user.jsonl
 
 ### Music Sheet Metadata
 
-> Update daily at 7:10 am ET (UTC-5 / UTC-4 Daylight Saving Time)
+> Last Updated: Sep 30, 2021
 
 https://musescore-dataset.xmader.com/score.jsonl
 
 ### All `mscz` files
 
-> Update daily at 7:10 am ET (UTC-5 / UTC-4 Daylight Saving Time)
+> Last Updated: Sep 30, 2021
 
 https://musescore-dataset.xmader.com/mscz-files.csv
 

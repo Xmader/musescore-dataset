@@ -1,6 +1,8 @@
 
 # musescore-dataset
 
+> 🚨 The dataset has been left unmaintained since Sep 30, 2021
+
 The unofficial dataset of all music sheets and users on musescore.com, dedicated to big data analytics / data science / machine learning.
 
 > All data is collected by iterating through [musecore.com's *public* API](https://developers.musescore.com/).

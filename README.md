@@ -84,7 +84,7 @@ do
         echo "$id.mscz exists."
     else
         echo "$id.mscz does not exist."
-        curl -\# https://ipfs.io$ref -o $id.mscz -m 3
+        curl -\# -f https://ipfs.io$ref -o $id.mscz -m 3
     fi
 done < <(sed '1d' mscz-files.csv)
 ```
@@ -128,7 +128,7 @@ You could help **musescore-dataset** become more accessible by:
     while IFS=, read -r id ref
     do
         echo "fetching $id.mscz"
-        curl -\# https://ipfs.io$ref -o $id.mscz -m 0.5
+        curl -\# -f https://ipfs.io$ref -o $id.mscz -m 0.5
         rm -f $id.mscz
     done < <(sed '1d' mscz-files.csv | shuf)
     ```

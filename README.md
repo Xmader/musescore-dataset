@@ -1,7 +1,8 @@
 
 # musescore-dataset
 
-> 🚨 The dataset has been left unmaintained since Sep 30, 2021
+> 🚨 The dataset has been left unmaintained since Sep 30, 2021.  
+> ~~[Help appreciated](mailto:i@xmader.com) if you want to take the risk of becoming the victim of [personal harassments](https://web.archive.org/web/20230129121047/https://github.com/Xmader/musescore-downloader/issues/5#issuecomment-882450335)~~
 
 The unofficial dataset of all music sheets and users on musescore.com, dedicated to big data analytics / data science / machine learning.
 
